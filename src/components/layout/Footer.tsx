@@ -58,7 +58,7 @@ export default function Footer() {
           </div>
 
           {/* COLUMN 3: SYSTEM OPERATIONAL STATUS */}
-          <div style={{ lgGridColumnEnd: "span 2" }}>
+          <div style={{ gridColumnEnd: "span 2" }}>
             <span style={{ display: "block", fontSize: "11px", textTransform: "uppercase", color: "#52525b", letterSpacing: "2px", fontWeight: 700, marginBottom: "20px" }}>// Availability Status</span>
             <div style={{ display: "flex", alignItems: "center", gap: "10px", marginBottom: "12px" }}>
               <span style={{ width: "8px", height: "8px", borderRadius: "50%", backgroundColor: "#22c55e", display: "inline-block", boxShadow: "0 0 12px #22c55e" }}></span>
