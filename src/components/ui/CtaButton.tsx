@@ -1,46 +1,17 @@
-"use client";
+import React from 'react';
+import styles from './CtaButton.module.css';
 
-import styles from "./CtaButton.module.css";
+// 1. Declare the type structure for your text prop
+interface CtaButtonProps {
+  text: string;
+}
 
-export default function CtaButton() {
+// 2. A clean, single definition matching your exact layout styles
+export default function CtaButton({ text }: CtaButtonProps) {
   return (
     <button className={styles.cta}>
       <span className={styles.span}>
-        START PROJECT
-      </span>
-
-      <span className={styles.second}>
-        <svg
-          width="50px"
-          height="20px"
-          viewBox="0 0 66 43"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <g
-            stroke="none"
-            strokeWidth="1"
-            fill="none"
-            fillRule="evenodd"
-          >
-            <path
-              className={styles.one}
-              d="M40.1543933..."
-              fill="#FFFFFF"
-            />
-
-            <path
-              className={styles.two}
-              d="M20.1543933..."
-              fill="#FFFFFF"
-            />
-
-            <path
-              className={styles.three}
-              d="M0.154393339..."
-              fill="#FFFFFF"
-            />
-          </g>
-        </svg>
+        {text}
       </span>
     </button>
   );
