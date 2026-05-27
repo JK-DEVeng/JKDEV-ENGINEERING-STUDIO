@@ -1,0 +1,96 @@
+/* =========================
+   CTA BUTTON
+========================= */
+
+.cta {
+  display: flex;
+  align-items: center;
+
+  padding: 10px 30px;
+
+  text-decoration: none;
+
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.08em;
+
+  color: white;
+
+  background: #6d28d9;
+
+  transition: 0.5s ease;
+
+  box-shadow: 6px 6px 0px black;
+
+  transform: skewX(-15deg);
+
+  border: none;
+
+  cursor: pointer;
+}
+
+.cta:focus {
+  outline: none;
+}
+
+.cta:hover {
+  box-shadow: 10px 10px 0 #ffa200;
+}
+
+.cta .span {
+  transform: skewX(15deg);
+}
+
+.cta .second {
+  width: 20px;
+
+  margin-left: 24px;
+
+  position: relative;
+
+  top: 1px;
+
+  transition: 0.5s;
+}
+
+.cta:hover .second {
+  margin-left: 38px;
+}
+
+.cta .one {
+  transition: 0.4s;
+  transform: translateX(-60%);
+}
+
+.cta .two {
+  transition: 0.5s;
+  transform: translateX(-30%);
+}
+
+.cta:hover .one {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.6s;
+}
+
+.cta:hover .two {
+  transform: translateX(0%);
+  animation: color_anim 1s infinite 0.4s;
+}
+
+.cta:hover .three {
+  animation: color_anim 1s infinite 0.2s;
+}
+
+@keyframes color_anim {
+  0% {
+    fill: white;
+  }
+
+  50% {
+    fill: #fbc638;
+  }
+
+  100% {
+    fill: white;
+  }
+}
